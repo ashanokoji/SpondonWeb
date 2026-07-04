@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
-import { Mail, ArrowLeft, CheckCircle } from 'lucide-react';
+import { Mail, ArrowLeft, CheckCircle, Lock } from 'lucide-react';
 import { useAuth } from '@/hooks/useAuth';
 import { SpondonTextField } from '@/components/ui/SpondonTextField';
 import { SpondonButton } from '@/components/ui/SpondonButton';
