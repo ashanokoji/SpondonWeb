@@ -1,3 +1,4 @@
+export enum DeferralType { ELIGIBLE = 'ELIGIBLE', TEMPORARY = 'TEMPORARY', PERMANENT = 'PERMANENT' }
 export enum Urgency { CRITICAL = 'CRITICAL', MODERATE = 'MODERATE', NORMAL = 'NORMAL' }
 export enum RequestStatus { ACTIVE = 'ACTIVE', FULFILLED = 'FULFILLED', EXPIRED = 'EXPIRED', CANCELLED = 'CANCELLED' }
 export enum CommunityType { PUBLIC = 'PUBLIC', PRIVATE = 'PRIVATE', SPONDON = 'SPONDON' }

@@ -2,6 +2,8 @@ import type { Metadata } from 'next';
 import './globals.css';
 import { ThemeProvider } from '@/contexts/ThemeContext';
 import { LanguageProvider } from '@/contexts/LanguageContext';
+import { AuthProvider } from '@/contexts/AuthContext';
+import AuthGuard from '@/components/AuthGuard';
 
 export const metadata: Metadata = {
   title: 'Spondon · স্পন্দন',
@@ -18,7 +20,11 @@ export default function RootLayout({
       <body>
         <ThemeProvider>
           <LanguageProvider>
-            {children}
+            <AuthProvider>
+              <AuthGuard>
+                {children}
+              </AuthGuard>
+            </AuthProvider>
           </LanguageProvider>
         </ThemeProvider>
       </body>
