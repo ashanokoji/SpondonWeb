@@ -1,7 +1,7 @@
 'use client';
 import { createContext, useContext, useState, useEffect } from 'react';
-import { Bn } from './bn';
-import { En } from './en';
+import { Bn } from '../i18n/bn';
+import { En } from '../i18n/en';
 
 type Language = 'bn' | 'en';
 
